@@ -1,0 +1,204 @@
+/*GENERIC AND COMPONENTS*/
+
+line{
+  content:"";
+  height:30%;
+  border:1px dashed rgba(150,150,150,0.5);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+h1{
+  font-size: 4rem;
+}
+
+h2{
+  font-size: 
+}
+
+a{
+  text-decoration:none;
+  color:black;
+  font-family:'Poppins';
+}
+
+img{
+  max-width: 200px;
+  max-height: 200px;
+}
+
+img.ico{
+  max-width: 50px;
+  max-height: 50px;
+}
+
+button.button{
+  border:0;
+}
+
+input{
+  border:0;
+  padding:2px 5px;
+}
+
+.red-button, .red-button>*{
+  background-color:#ED3A47;
+  color:white;
+}
+
+.white-button, .white-button>*{
+  background-color:rgba(255,255,255,0);
+  color:black;
+}
+
+.black-button, .black-button>*{
+  background-color:black;
+  color:white;
+}
+
+body { 
+  font-family: 'Poppins';
+  width:100vw;
+  overflow-x: hidden;
+  margin:0;
+}
+
+/*HEADER*/
+
+header{
+  width:100%;
+}
+
+header>div{
+  padding:0 25px;
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  border-bottom:1px solid lightgray;
+}
+
+nav>ul{
+  list-style:none;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+nav>ul>li{
+  margin-right:10px;
+}
+
+header>img{
+  margin-right:1rem;
+}
+
+input{
+  background-color:rgba(0,0,0,0.1);
+}
+
+input#searchBar{
+  padding:13px 20px 13px 2px;
+  width:75vw;
+}
+
+form{
+  flex-grow:1;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  align-content:stretch;
+  padding:3px 0;
+}
+
+form>button{
+  padding:13px 20px;
+  border:0;
+  cursor:pointer;
+}
+
+form>img{
+  width:25px;
+  height:25px;
+  background:rgba(0,0,0,0.1);
+  padding:8px 0 8px 8px;
+}
+
+/*MAIN*/
+
+main {
+  text-align:center;
+}
+
+main>:nth-child(2n+1){
+  background-color:rgba(232,217,217,.3);
+}
+
+section{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+  align-items:center;
+/*  padding-top:20vh;
+  padding-bottom:20vh;*/
+  height:80vh;
+}
+
+section:not(#third){
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+section>.buttons{
+  display:flex;
+  justify-content:space-around;
+  width:100%;
+}
+
+main button{
+  padding:20px 80px;
+}
+
+main button.red-button{
+  box-shadow: 8px 8px 0 rgba(251,59,73,.2);
+  transition: box-shadow .5s ease;
+}
+
+main button.red-button:hover{
+  box-shadow: 2px 2px 0 rgba(251,59,73,.5);
+  transition: box-shadow .5s ease;
+}
+
+main button.black-button{
+  box-shadow: 8px 8px 0 rgba(0,0,0, 0.2);
+  transition: box-shadow .5s ease;
+}
+
+main button.black-button:hover{
+  box-shadow: 2px 2px 0 rgba(0,0,0,.5);
+  transition: box-shadow .5s ease;
+}
+
+section#first>p, section#second>p{
+  margin:0 20%;
+}
+
+#third>.articles{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items:center;
+}
+
+#third article{
+  text-align:left;
+  padding:4%;
+}
+
+#third article .article-title{
+  color:#ED3A47;
+}
+
+
+
+
+
